@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 *,
 ::after,
 ::before {
@@ -6,11 +8,4 @@
 
 body {
   margin: 0;
-}
-
-.main-container {
-  height: 100vh;
-  max-width: 500px;
-  margin: 0 auto;
-  padding: 0 20px;
 }
