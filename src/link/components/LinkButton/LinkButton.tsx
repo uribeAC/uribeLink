@@ -13,7 +13,7 @@ const LinkButton: React.FC<LinkButtonProps> = ({ text, iconUrl, link }) => {
       target="_blank"
       className="flex justify-between items-center min-w-[250px] text-lg text-white px-4 py-2 rounded-xl border-2 border-gray-100 shadow-lg hover:shadow-gray-100/30 transform transition delay-50 duration-400 ease-in-out hover:scale-110 hover:bg-indigo-500"
     >
-      <span>{text}</span>
+      {text}
       <img src={iconUrl} alt="" aria-hidden />
     </a>
   );
