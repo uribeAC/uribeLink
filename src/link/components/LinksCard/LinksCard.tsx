@@ -8,7 +8,7 @@ const LinksCard: React.FC = () => {
         <img
           className="rounded-full shadow-lg shadow-black-100/30 border-1 border-gray-100"
           src="/perfil.webp"
-          alt="Alex Uribe profile photograph"
+          alt="Alex Uribe profile photography"
           height={200}
           width={200}
         />
