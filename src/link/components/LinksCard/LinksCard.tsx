@@ -7,28 +7,13 @@ import {
   goodreadsLink,
   linkedinLink,
 } from "../../data/links";
+import LinkProfile from "../LinkProfile/LinkProfile";
+import { alexUribeProfile } from "../../data/profile";
 
 const LinksCard: React.FC = () => {
   return (
     <article className="flex p-10 gap-10 rounded-lg border-3 bg-[#ffffff1a] border-gray-100 shadow-lg shadow-gray-100/30">
-      <div className="flex flex-col gap-5 items-center max-w-2xs">
-        <img
-          className="rounded-full shadow-lg shadow-black-100/30 border-1 border-gray-100"
-          src="/perfil.webp"
-          alt="Alex Uribe profile photography"
-          height={200}
-          width={200}
-        />
-        <div className="text-center text-white flex flex-col gap-1 border-b w-full pb-5">
-          <h1 className=" text-3xl font-medium ">Alex Uribe</h1>
-          <h2 className="text-xl font-medium">Full Stack Developer</h2>
-          <span>Based in Barcelona</span>
-        </div>
-        <p className="flex flex-col gap-1 text-center max-w-lg text-white">
-          MERN stack developer with a visual mind and architectural logic. I
-          build clean, accessible code focused on testing and user experience.
-        </p>
-      </div>
+      <LinkProfile profile={alexUribeProfile} />
       <div className="flex flex-col justify-center gap-7">
         <LinkButton linkInfo={curriculumLink} />
         <LinkButton linkInfo={emailLink} />
