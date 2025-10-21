@@ -1,12 +1,13 @@
 import type React from "react";
+import type { Link } from "../../types";
 
 interface LinkButtonProps {
-  text: string;
-  iconUrl: string;
-  link: string;
+  linkInfo: Link;
 }
 
-const LinkButton: React.FC<LinkButtonProps> = ({ text, iconUrl, link }) => {
+const LinkButton: React.FC<LinkButtonProps> = ({
+  linkInfo: { text, iconUrl, link },
+}) => {
   return (
     <a
       href={link}

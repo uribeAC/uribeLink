@@ -1,5 +1,12 @@
 import type React from "react";
 import LinkButton from "../LinkButton/LinkButton";
+import {
+  curriculumLink,
+  emailLink,
+  githubLink,
+  goodreadsLink,
+  linkedinLink,
+} from "../../data/links";
 
 const LinksCard: React.FC = () => {
   return (
@@ -23,31 +30,11 @@ const LinksCard: React.FC = () => {
         </p>
       </div>
       <div className="flex flex-col justify-center gap-7">
-        <LinkButton
-          text="Check my CV"
-          iconUrl="/Read-Cv-Logo--Streamline-Phosphor.svg"
-          link="/CV Alex Uribe.pdf"
-        />
-        <LinkButton
-          text="Send me an email"
-          iconUrl="/Mail--Streamline-Tabler.svg"
-          link="mailto:alex5uribe@gmail.com"
-        />
-        <LinkButton
-          text="More about me"
-          iconUrl="/Linkedin--Streamline-Core-Remix.svg"
-          link="https://www.linkedin.com/in/alex-uribe-crespo/"
-        />
-        <LinkButton
-          text="Explore my repos"
-          iconUrl="/Github--Streamline-Iconoir.svg"
-          link="https://github.com/uribeAC"
-        />
-        <LinkButton
-          text="Beyond the screen"
-          link="https://www.goodreads.com/user/show/84064620-uribeac"
-          iconUrl="/Goodreads-Logo--Streamline-Phosphor.svg"
-        />
+        <LinkButton linkInfo={curriculumLink} />
+        <LinkButton linkInfo={emailLink} />
+        <LinkButton linkInfo={linkedinLink} />
+        <LinkButton linkInfo={githubLink} />
+        <LinkButton linkInfo={goodreadsLink} />
       </div>
     </article>
   );
