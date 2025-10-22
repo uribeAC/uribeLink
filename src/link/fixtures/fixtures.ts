@@ -13,3 +13,21 @@ export const saraRevert: Profile = {
   description: "Best vet",
   profileUrl: "",
 };
+
+export const instagramLink: Link = {
+  link: "https://instagram.com",
+  iconUrl: "",
+  text: "Instagram",
+};
+
+export const youtubeLink: Link = {
+  link: "https://youtube.com",
+  iconUrl: "",
+  text: "Youtube",
+};
+
+export const twitterLink: Link = {
+  link: "https://twitter.com",
+  iconUrl: "",
+  text: "Twitter",
+};
